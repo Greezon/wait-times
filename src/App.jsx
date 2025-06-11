@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { styles } from './Styles';
 import axios from 'axios';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const WaitingRoomApp = () => {
   const [isAdmin, setIsAdmin] = useState(false);
@@ -12,7 +13,7 @@ const WaitingRoomApp = () => {
   const [error, setError] = useState(null);
 
   // FastAPI endpoint
-  const API_URL = 'https://waitingroom-display.tfhd.ad/api/providers';
+  const API_URL = 'http://waitingroom-display.tfhd.ad/api/providers';
 
   // Fetch providers from FastAPI backend
   const fetchProviders = async () => {
@@ -391,11 +392,12 @@ const WaitingRoomApp = () => {
       >
         Admin
       </button>
-
+    
       <h1 style={styles.displayTitle}>Provider Wait Times</h1>
       <p style={styles.subtitle}>Current estimated wait times</p>
       <div style={styles.currentTime}>
         {formatTime(currentTime)}
+    
       </div>
 
       {providers.filter(p => p.visible).length === 0 ? (

@@ -12,7 +12,7 @@ export const styles = {
     padding: '20px'
   },
   displayContainer: {
-    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    background: 'linear-gradient(135deg,rgb(75, 93, 36) 0%, #4b5d24 100%)',
     minHeight: '100vh',
     padding: '20px',
     color: 'white',
@@ -156,12 +156,12 @@ export const styles = {
   },
   displayGrid: {
     display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(15%, 1fr))',
     gap: '30px',
     width: '100%',
     maxWidth: '1400px',
     margin: '0 auto',
-    padding: '20px'
+    padding: '20px',
   },
   displayCard: {
     background: 'rgba(255, 255, 255, 0.1)',
@@ -171,7 +171,7 @@ export const styles = {
     padding: '30px',
     textAlign: 'center',
     transition: 'all 0.3s ease',
-    minHeight: '200px',
+    minHeight: '5%',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
